@@ -59,7 +59,7 @@ body {
   cursor: pointer;
 }
 .btn:hover {
-  filter: brightness(0.9);
+  background-color: rgb(5, 126, 212);
 }
 .score {
   color: rgb(10, 148, 247);
