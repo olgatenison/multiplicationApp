@@ -5,48 +5,64 @@ body {
   height: 100vh;
   align-items: center;
   text-align: center;
-  background-color: aqua;
-  font-family: cursive;
+  background-color: #f0f0f3;
+  font-family: "Roboto Slab", serif;
 }
 .form {
-  background-color: azure;
-  padding: 20px;
-  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f3;
+  padding: 30px;
+  box-shadow: -10px -10px 30px rgb(255, 255, 255),
+    10px 10px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  border: #f0f0f3 1px;
   margin: 15px;
 }
 .input {
   display: block;
   width: 100%;
   box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: inset -10px -10px 10px rgba(255, 255, 255, 0.7),
+    inset 10px 10px 10px rgba(53, 53, 82, 0.2);
+  background-color: #e6e6e9;
   font-size: 30px;
   text-align: center;
   padding: 10px;
-  border: solid 4px green;
-  color: green;
+  border: solid #f0f0f3 1px;
+  color: rgb(10, 148, 247);
+  font-family: "Roboto Slab", serif;
+}
+.input:focus {
+  outline: 0;
+  outline-offset: 0;
+  color: rgb(10, 148, 247);
+  border: 1px solid rgb(10, 148, 247); /* цвет обводки */
 }
 .input::placeholder {
-  color: greenyellow;
-  font-family: cursive;
+  color: rgb(195, 194, 194);
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
 }
 .btn {
-  background-color: green;
+  background-color: rgb(10, 148, 247);
   color: azure;
   border: none;
   display: block;
   width: 100%;
   padding: 10px;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
   margin: 20px 0;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: -10px -10px 30px rgb(255, 255, 255),
+    5px 5px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .btn:hover {
   filter: brightness(0.9);
 }
 .score {
-  color: green;
+  color: rgb(10, 148, 247);
   text-align: right;
+  margin-right: 5px;
 }
