@@ -7,6 +7,7 @@ const inputEl = document.getElementById("input");
 const scoreEl = document.getElementById("score");
 
 let score = JSON.parse(localStorage.getItem("score"));
+
 if (!score) {
   score = 0;
 }
@@ -18,7 +19,7 @@ const correctAnswer = num1 * num2;
 
 formEl.addEventListener("submit", () => {
   const userAnswer = +inputEl.value;
-  console.log(userAnswer);
+
   if (userAnswer === correctAnswer) {
     score++;
     updateLocalStorage();
